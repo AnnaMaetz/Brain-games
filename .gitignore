@@ -1,3 +1,5 @@
 /node_modules
 /.vscode
 .eslintrc.yml
+/dist
+npm-debug.log
