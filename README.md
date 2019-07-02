@@ -15,4 +15,4 @@ Correct!
 Question: 12 15 18 21 .. 27 30 33
 Your answer: 24
 Correct!
-Congratulations, Roman!!
+Congratulations, Roman!
