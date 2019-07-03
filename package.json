@@ -1,6 +1,6 @@
 {
   "name": "braingames137",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Brain Games",
   "main": "index.js",
   "bin": {
@@ -30,5 +30,7 @@
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
