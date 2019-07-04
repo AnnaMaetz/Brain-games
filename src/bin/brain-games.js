@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import name from '..';
 
-console.log('Welcome to the Brain Games!');
-name();
+export default () => {
+  console.log('\nWelcome to the Brain Games!');
+};
