@@ -9,6 +9,19 @@ export const getRandomIntInclusive = (min, max) => {
   return Math.floor(Math.random() * (floorMax - ceilMin + 1)) + ceilMin;
 };
 
+const isTrueAnswer = (tAnswer, uAnswer, uName, i) => {
+  if (tAnswer === uAnswer) {
+    console.log('Correct!');
+    if (i === 2) {
+      console.log(`Congratulations, ${uName}!\n`);
+    }
+    return true;
+  }
+  console.log(`\x1B[31m${uAnswer} \x1B[39mis wrong answer ;(. Correct answer was \x1B[31m${tAnswer}\x1B[39m.`);
+  console.log(`Let's try again, ${uName}!\n`);
+  return false;
+};
+
 export const brainGames = (task, questionAnswer) => {
   console.log('\nWelcome to the Brain Games!');
   console.log(task);
@@ -18,15 +31,6 @@ export const brainGames = (task, questionAnswer) => {
     const question = car(pairQuestionAnswer);
     const trueAnswer = cdr(pairQuestionAnswer);
     const userAnswer = readlineSync.question(`Question: ${question}\nYour answer: `);
-    if (trueAnswer === userAnswer) {
-      console.log('Correct!');
-      if (i === 2) {
-        console.log(`Congratulations, ${userName}!\n`);
-      }
-    } else {
-      console.log(`\x1B[31m${userAnswer} \x1B[39mis wrong answer ;(. Correct answer was \x1B[31m${trueAnswer}\x1B[39m.`);
-      console.log(`Let's try again, ${userName}!\n`);
-      break;
-    }
+    if (!isTrueAnswer(trueAnswer, userAnswer, userName, i)) break;
   }
 };
