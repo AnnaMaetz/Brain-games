@@ -18,7 +18,7 @@ const questionAnswer = () => {
         const newN2 = n2 / divisor;
         const newResult = result * divisor;
         if (n1 === divisor) {
-            return newResult;
+          return newResult;
         }
         return gcd(newN1, newN2, newResult, 2);
       }
@@ -29,7 +29,7 @@ const questionAnswer = () => {
     }
 
     return gcd(n1, n2, result, divisor + 1);
-  }
+  };
   const answer = gcd(number1, number2, 1, 2);
   return cons(question, String(answer));
 };
