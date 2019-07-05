@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import name from '..';
 import { car, cdr } from '@hexlet/pairs';
+import name from '..';
 
 export const getRandomIntInclusive = (min, max) => {
   const ceilMin = Math.ceil(min);
