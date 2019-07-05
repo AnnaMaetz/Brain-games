@@ -2,7 +2,7 @@
 import { cons } from '@hexlet/pairs';
 import { brainGames, getRandomIntInclusive } from '../brain-games';
 
-const task = 'What is the result of the expression?';
+const task = 'What is the result of the expression?\n';
 const questionAnswer = () => {
   const operation = getRandomIntInclusive(1, 3);
   const number1 = getRandomIntInclusive(1, 30);
