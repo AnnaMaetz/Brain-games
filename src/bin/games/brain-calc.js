@@ -7,8 +7,8 @@ const questionAnswer = () => {
   const operation = getRandomIntInclusive(1, 3);
   const number1 = getRandomIntInclusive(1, 30);
   const number2 = getRandomIntInclusive(1, 30);
-  let answer;
   let question;
+  let answer;
   switch (operation) {
     case 1:
       question = `${number1} + ${number2}`;

@@ -21,7 +21,7 @@ export const brainGames = (task, questionAnswer) => {
     if (trueAnswer === userAnswer) {
       console.log('Correct!');
       if (i === 2) {
-        console.log(`Congratulations, ${userName}!`);
+        console.log(`Congratulations, ${userName}!\n`);
       }
     } else {
       console.log(`\x1B[31m${userAnswer} \x1B[39mis wrong answer ;(. Correct answer was \x1B[31m${trueAnswer}\x1B[39m.`);
