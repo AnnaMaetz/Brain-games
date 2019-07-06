@@ -8,3 +8,6 @@ brain-calc:
 
 brain-gcd:
 [![asciicast](https://asciinema.org/a/Zd3DXAo5bnXILXcWknGyZdyBl.png)](https://asciinema.org/a/Zd3DXAo5bnXILXcWknGyZdyBl)
+
+brain-progression:
+[![asciicast](https://asciinema.org/a/ni8jndkGfJTvBvB4mTxpEwjTg.png)](https://asciinema.org/a/ni8jndkGfJTvBvB4mTxpEwjTg)
