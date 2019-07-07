@@ -4,7 +4,6 @@
   "description": "Brain Games - even, calc, gcd, progression, prime",
   "keywords": ["braingames", "brain games", "brain-games", "brain-even",
     "brain-calc", "brain-gcd", "brain-progression", "brain-prime"],
-  "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/games/brain-even.js",
