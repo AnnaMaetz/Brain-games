@@ -10,9 +10,9 @@ const isPrime = (number) => {
       return true;
     }
     return isPrimeIter(i + 1);
-  }
+  };
   return isPrimeIter(2);
-}
+};
 
 const buildQuestionAnswer = () => {
   const question = getRandomIntInclusive(1, 71);

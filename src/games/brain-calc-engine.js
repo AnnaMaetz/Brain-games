@@ -3,13 +3,11 @@ import { greet, getRandomIntInclusive, play } from '..';
 
 const operations = ['+', '-', '*'];
 
-const getQuestion = (number1, number2, operationIndex) => {
-  return `${number1} ${operations[operationIndex]} ${number2}`;
-};
+const getQuestion = (number1, number2, operationIndex) => `${number1} ${operations[operationIndex]} ${number2}`;
 
 const getAnswer = (number1, number2, operationIndex) => {
   const question = `${number1} ${operations[operationIndex]} ${number2}`;
-  return eval(question);
+  return Math.eval(question);
 };
 
 const buildQuestionAnswer = () => {
@@ -24,6 +22,4 @@ const buildQuestionAnswer = () => {
 const task = 'What is the result of the expression?\n';
 const userName = greet(task);
 
-export default () => {
-  play(buildQuestionAnswer, userName, 0);
-};
+export default () => play(buildQuestionAnswer, userName, 0);

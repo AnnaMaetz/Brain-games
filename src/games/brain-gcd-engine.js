@@ -19,6 +19,4 @@ const buildQuestionAnswer = () => {
 const task = 'Find the greatest common divisor of given numbers.\n';
 const userName = greet(task);
 
-export default () => {
-  play(buildQuestionAnswer, userName, 0);
-};
+export default () => play(buildQuestionAnswer, userName, 0);
