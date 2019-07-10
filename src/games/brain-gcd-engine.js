@@ -1,11 +1,11 @@
 import { cons } from '@hexlet/pairs';
 import { greet, getRandomIntInclusive, play } from '..';
 
-const calculateGcd = (n1, n2) => {
-  if (!n2) {
-    return n1;
+const calculateGcd = (number1, number2) => {
+  if (!number2) {
+    return number1;
   }
-  return calculateGcd(n2, n1 % n2);
+  return calculateGcd(number2, number1 % number2);
 };
 
 const buildQuestionAnswer = () => {
