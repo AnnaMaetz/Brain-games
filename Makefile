@@ -5,4 +5,4 @@ start:
 pub:
 	sudo npm publish --dry-run
 lint:
-	npx eslint *
+	npx eslint ~/project1/frontend-project-lvl1/src/*
