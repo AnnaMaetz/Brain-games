@@ -2,16 +2,16 @@
 [![Build Status](https://travis-ci.org/AnnaMaetz/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/AnnaMaetz/frontend-project-lvl1)
 
 brain-even:
-[![asciicast](https://asciinema.org/a/JoeL6zXbIg917njfEZ1R2oqJA.png)](https://asciinema.org/a/JoeL6zXbIg917njfEZ1R2oqJA)
+[![asciicast](https://asciinema.org/a/KeveAWkPxDskO3xBA6PcSte0E.png)](https://asciinema.org/a/KeveAWkPxDskO3xBA6PcSte0E)
 
 brain-calc:
-[![asciicast](https://asciinema.org/a/jSP7s0TpRbQvb8rK5mujxHR24.png)](https://asciinema.org/a/jSP7s0TpRbQvb8rK5mujxHR24)
+[![asciicast](https://asciinema.org/a/mme2JhN95RGYSIzMmlricEdrB.png)](https://asciinema.org/a/mme2JhN95RGYSIzMmlricEdrB)
 
 brain-gcd:
-[![asciicast](https://asciinema.org/a/Zd3DXAo5bnXILXcWknGyZdyBl.png)](https://asciinema.org/a/Zd3DXAo5bnXILXcWknGyZdyBl)
+[![asciicast](https://asciinema.org/a/e6lvQgLo1hp0JvirGp3HLhiJX.png)](https://asciinema.org/a/e6lvQgLo1hp0JvirGp3HLhiJX)
 
 brain-progression:
-[![asciicast](https://asciinema.org/a/ni8jndkGfJTvBvB4mTxpEwjTg.png)](https://asciinema.org/a/ni8jndkGfJTvBvB4mTxpEwjTg)
+[![asciicast](https://asciinema.org/a/xs2BSJjbHED8SqrYDJO8Qx7Pb.png)](https://asciinema.org/a/xs2BSJjbHED8SqrYDJO8Qx7Pb)
 
 brain-prime:
-[![asciicast](https://asciinema.org/a/ZjWOYLsG694qpZjcNKZ6mrcr9.png)](https://asciinema.org/a/ZjWOYLsG694qpZjcNKZ6mrcr9)
+[![asciicast](https://asciinema.org/a/OALsnuvNHoUJ44SfBFtDNWzPV.png)](https://asciinema.org/a/OALsnuvNHoUJ44SfBFtDNWzPV)
