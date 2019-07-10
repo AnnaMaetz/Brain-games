@@ -23,6 +23,4 @@ const buildQuestionAnswer = () => {
 const task = 'What number is missing in the progression?\n';
 const userName = greet(task);
 
-export default () => {
-  play(buildQuestionAnswer, userName, 0);
-};
+export default () => play(buildQuestionAnswer, userName, 0);

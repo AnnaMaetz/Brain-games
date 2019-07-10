@@ -12,6 +12,4 @@ const buildQuestionAnswer = () => {
 const task = 'Answer \x1B[31m"yes" \x1B[39mif number even otherwise answer \x1B[31m"no"\x1B[39m.\n\n';
 const userName = greet(task);
 
-export default () => {
-  play(buildQuestionAnswer, userName, 0);
-};
+export default () => play(buildQuestionAnswer, userName, 0);
