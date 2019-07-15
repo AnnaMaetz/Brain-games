@@ -2,9 +2,6 @@ import { cons } from '@hexlet/pairs';
 import play from '..';
 import { decorateText, getRandomInt } from '../utils';
 
-const minNumber = 0;
-const maxNumber = 71;
-
 const isPrime = (number) => {
   if (number <= 1) {
     return false;
@@ -22,7 +19,7 @@ const isPrime = (number) => {
 };
 
 const generateGameData = () => {
-  const question = getRandomInt(minNumber, maxNumber + 1);
+  const question = getRandomInt();
   const answer = isPrime(question) ? 'yes' : 'no';
   return cons(question, answer);
 };

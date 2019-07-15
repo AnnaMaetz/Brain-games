@@ -2,21 +2,18 @@ import { cons } from '@hexlet/pairs';
 import play from '..';
 import { getRandomInt } from '../utils';
 
-const minNumber = 0;
-const maxNumber = 30;
-
-const findGCD = (a, b) => {
+const findGcd = (a, b) => {
   if (!b) {
     return a;
   }
-  return findGCD(b, a % b);
+  return findGcd(b, a % b);
 };
 
 const generateGameData = () => {
-  const a = getRandomInt(minNumber, maxNumber + 1);
-  const b = getRandomInt(minNumber, maxNumber + 1);
+  const a = getRandomInt();
+  const b = getRandomInt();
   const question = `${a} ${b}`;
-  const answer = findGCD(a, b);
+  const answer = findGcd(a, b);
   return cons(question, String(answer));
 };
 
