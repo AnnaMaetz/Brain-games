@@ -8,7 +8,7 @@ const maxFirstElement = 71;
 const minStep = 1;
 const maxStep = 10;
 
-const generateDataGame = () => {
+const generateGameData = () => {
   const hiddenPosition = getRandomInt(0, length);
   const step = getRandomInt(minStep, maxStep + 1);
   const firstElement = getRandomInt(minFirstElement, maxFirstElement + 1);
@@ -25,4 +25,4 @@ const generateDataGame = () => {
 
 const task = 'What number is missing in the progression?';
 
-export default () => play(generateDataGame, task);
+export default () => play(generateGameData, task);

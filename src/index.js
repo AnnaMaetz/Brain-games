@@ -4,15 +4,15 @@ import { decorateText } from './utils';
 
 const roundsCount = 3;
 
-export default (generateDataGame, task) => {
+export default (generateGameData, task) => {
   console.log('\nWelcome to the Brain Games!');
   console.log(`${task}\n`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n\n`);
   for (let i = 0; i < roundsCount; i += 1) {
-    const dataGame = generateDataGame();
-    const question = car(dataGame);
-    const trueAnswer = cdr(dataGame);
+    const gameData = generateGameData();
+    const question = car(gameData);
+    const trueAnswer = cdr(gameData);
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (trueAnswer === userAnswer) {

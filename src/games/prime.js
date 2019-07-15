@@ -18,7 +18,7 @@ const isPrime = (number) => {
   return iter(number, 2);
 };
 
-const generateDataGame = () => {
+const generateGameData = () => {
   const question = getRandomInt(minNumber, maxNumber + 1);
   const answer = isPrime(question) ? 'yes' : 'no';
   return cons(question, answer);
@@ -26,4 +26,4 @@ const generateDataGame = () => {
 
 const task = `Answer ${decorateText('\'yes\'')} if given number is prime. Otherwise answer ${decorateText('\'no\'')}.`;
 
-export default () => play(generateDataGame, task);
+export default () => play(generateGameData, task);

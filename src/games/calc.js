@@ -13,7 +13,7 @@ const operations = {
   '*': (a, b) => a * b,
 };
 
-const generateDataGame = () => {
+const generateGameData = () => {
   const operatorIndex = getRandomInt(0, operators.length);
   const a = getRandomInt(minNumber, maxNumber + 1);
   const b = getRandomInt(minNumber, maxNumber + 1);
@@ -25,4 +25,4 @@ const generateDataGame = () => {
 
 const task = 'What is the result of the expression?';
 
-export default () => play(generateDataGame, task);
+export default () => play(generateGameData, task);

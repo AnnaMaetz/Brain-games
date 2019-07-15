@@ -7,7 +7,7 @@ const maxNumber = 30;
 
 const isEven = question => question % 2 === 0;
 
-const generateDataGame = () => {
+const generateGameData = () => {
   const question = getRandomInt(minNumber, maxNumber + 1);
   const answer = isEven(question) ? 'yes' : 'no';
   return cons(question, answer);
@@ -15,4 +15,4 @@ const generateDataGame = () => {
 
 const task = `Answer ${decorateText('\'yes\'')} if number even otherwise answer ${decorateText('\'no\'')}.`;
 
-export default () => play(generateDataGame, task);
+export default () => play(generateGameData, task);
