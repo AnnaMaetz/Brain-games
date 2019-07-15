@@ -2,27 +2,27 @@ import { cons } from '@hexlet/pairs';
 import play from '..';
 import { getRandomInt } from '../utils';
 
-const operations = ['+', '-', '*'];
+const minNumber = 0;
+const maxNumber = 30;
 
-const getAnswer = (number1, number2, operation) => {
-  const calculations = {
-    '+': () => number1 + number2,
-    '-': () => number1 - number2,
-    '*': () => number1 * number2,
-  };
-  return calculations[operation]();
+const operators = ['+', '-', '*'];
+
+const operations = {
+  '+': (a, b) => a + b,
+  '-': (a, b) => a - b,
+  '*': (a, b) => a * b,
 };
 
-const makeGame = () => {
-  const operationIndex = getRandomInt(operations.length);
-  const number1 = getRandomInt(30);
-  const number2 = getRandomInt(30);
-  const question = `${number1} ${operations[operationIndex]} ${number2}`;
-  const answer = getAnswer(number1, number2, operations[operationIndex]);
+const generateDataGame = () => {
+  const operatorIndex = getRandomInt(0, operators.length);
+  const a = getRandomInt(minNumber, maxNumber + 1);
+  const b = getRandomInt(minNumber, maxNumber + 1);
+  const operator = operators[operatorIndex];
+  const question = `${a} ${operator} ${b}`;
+  const answer = operations[operator](a, b);
   return cons(question, String(answer));
 };
 
-const task = 'What is the result of the expression?\n';
-const numberOfRounds = 3;
+const task = 'What is the result of the expression?';
 
-export default () => play(makeGame, numberOfRounds, task);
+export default () => play(generateDataGame, task);

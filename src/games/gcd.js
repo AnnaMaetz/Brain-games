@@ -2,22 +2,24 @@ import { cons } from '@hexlet/pairs';
 import play from '..';
 import { getRandomInt } from '../utils';
 
-const findGCD = (number1, number2) => {
-  if (!number2) {
-    return number1;
+const minNumber = 0;
+const maxNumber = 30;
+
+const findGCD = (a, b) => {
+  if (!b) {
+    return a;
   }
-  return findGCD(number2, number1 % number2);
+  return findGCD(b, a % b);
 };
 
-const makeGame = () => {
-  const number1 = getRandomInt(30);
-  const number2 = getRandomInt(30);
-  const question = `${number1} ${number2}`;
-  const answer = findGCD(number1, number2);
+const generateDataGame = () => {
+  const a = getRandomInt(minNumber, maxNumber + 1);
+  const b = getRandomInt(minNumber, maxNumber + 1);
+  const question = `${a} ${b}`;
+  const answer = findGCD(a, b);
   return cons(question, String(answer));
 };
 
-const task = 'Find the greatest common divisor of given numbers.\n';
-const numberOfRounds = 3;
+const task = 'Find the greatest common divisor of given numbers.';
 
-export default () => play(makeGame, numberOfRounds, task);
+export default () => play(generateDataGame, task);
