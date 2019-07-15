@@ -6,12 +6,15 @@ const minNumber = 0;
 const maxNumber = 71;
 
 const isPrime = (number) => {
+  if (number === 1) {
+    return false;
+  }
   const iter = (n, acc) => {
+    if (acc >= Math.sqrt(n)) {
+      return true;
+    }
     if (n % acc === 0) {
       return false;
-    }
-    if (acc > Math.sqrt(n)) {
-      return true;
     }
     return iter(n, acc + 1);
   };
