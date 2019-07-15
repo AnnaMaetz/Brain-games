@@ -6,7 +6,7 @@ const minNumber = 0;
 const maxNumber = 71;
 
 const isPrime = (number) => {
-  if (number === 1) {
+  if (number <= 1) {
     return false;
   }
   const iter = (n, acc) => {
