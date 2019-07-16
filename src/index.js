@@ -20,9 +20,8 @@ export default (generateGameData, task) => {
     } else {
       console.log(`${decorateText(userAnswer)} is wrong answer ;(. Correct answer was ${decorateText(trueAnswer)}.`);
       console.log(`Let's try again, ${userName}!\n`);
-      return false;
+      return;
     }
   }
   console.log(`Congratulations, ${userName}!\n`);
-  return true;
 };

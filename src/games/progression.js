@@ -9,7 +9,7 @@ const generateGameData = () => {
   const step = getRandomInt();
   const firstElement = getRandomInt();
   const progression = [];
-  for (let i = 0; i < length; i += 1) {
+  for (let i = 0; i <= length; i += 1) {
     const element = (i === 0) ? firstElement : progression[i - 1] + step;
     progression.push(element);
   }
