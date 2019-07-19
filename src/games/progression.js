@@ -2,10 +2,10 @@ import { cons } from '@hexlet/pairs';
 import play from '..';
 import { getRandomInt } from '../utils';
 
-const length = 9;
+const length = 10;
 
 const generateGameData = () => {
-  const hiddenPosition = getRandomInt(0, length);
+  const hiddenPosition = getRandomInt(0, length - 1);
   const step = getRandomInt();
   const firstElement = getRandomInt();
   const progression = [];

@@ -3,7 +3,6 @@ import play from '..';
 import { getRandomInt } from '../utils';
 
 const operators = ['+', '-', '*'];
-const length = operators.length - 1;
 
 const operations = {
   '+': (a, b) => a + b,
@@ -12,7 +11,7 @@ const operations = {
 };
 
 const generateGameData = () => {
-  const operatorIndex = getRandomInt(0, length);
+  const operatorIndex = getRandomInt(0, operators.length - 1);
   const a = getRandomInt();
   const b = getRandomInt();
   const operator = operators[operatorIndex];
